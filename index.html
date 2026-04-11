@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!--start of styles section-->
-    <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/nav-footer-bar.css">
-    <link rel="stylesheet" href="style/button.css">
-    <link rel="stylesheet" href="style/content.css">
-    <!--end of styles section-->
-</head>
-<body>
-    <!--nav bar-->
-    <script id="replace_with_navbar" src="js/nav.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
 
-    <!--start of main content-->
-    <main class="about">
-        <!--logo/image-->
-        <div class="my-photo">
-            <img src="images/maryann.jpg" alt="">
-        </div>
-        <div class="text-about"><!--about myself-->
-            <p class="greetings">Hello, my name is</p>
-            <p class="name">Mary Ann</p>
-            <p class="">Based in Quezon City, Philippines. Currently exploring the world of IT.<br>
-                 <br> I am currently a Business Analyst.
-            </p>
-            <a href="mailto:maryanngutierrez1998@gmail.com"><button class="contact-button">Gmail</button></a>
-            <a href="https://www.linkedin.com/in/mary-ann-gutierrez/" target="_blank"><button class="contact-button">LinkedIn</button><br></a>
-            <p class="greetings">
-                Salamat!
-            </p>
-        </div>
-    </main>
-    <!--end of main content-->
+        <link rel="stylesheet" href="style/navbar.css"/>
+        <!--bootstrap css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--end of styles section-->
+    </head>
+    <body class="d-flex flex-column min-vh-100">
 
-    <!--footer-->
-    <script id="replace_with_footer" src="js/footer.js"></script>
-</body>
+        <!--start of navbar-->
+        <nav class="navbar c-navbar navbar-expand-sm">
+            <div class="container">
+                <a class="navbar-brand c-navbar-brand text-uppercase" href="index.html">Meann</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--if you want the below part to be on the most right part, add ms-auto under ul-->
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutme.html">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">My Projects</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+        <!--end of navbar-->
+
+        <!--start of main content-->
+        <main class="flex-grow-1">
+            <div class="container">
+                <h1 class="text-center mt-5">Hello, there!</h1>
+                <p class="text-center">I'm Meann, a follower of Christ and a Business Analyst.</p>
+            </div>
+        </main>
+        <!--end of main content-->
+
+        <!--footer-->
+        <footer class="c-footer bg-dark py-5 mt-5">
+            <div class="container text-light text-center min-vh">
+                <p class="text-center mt-5">Copyright &copy; 2026 Meann. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--bootstrap js-->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>

@@ -1,27 +1,14 @@
-header{
-    display: flex; /*fixed poosition even though it is scrolled down*/
-    justify-content: flex-end;
-    align-items: center;
-    background-color: red;
-    padding: 10px 10%;
-    width: 100%;
+/* where the navbar styles are defined */
+
+.c-navbar {
+    background-color: #9517f5;
+    font-family: monospace;
 }
 
-span{
-    margin-right: auto;
+.c-navbar .c-navbar-brand {
+    color: #fff;
 }
 
-.logo-name a{
-    color: white;
-    font-weight: 800;
-}
-
-.navbar a{
-    color: white;
-}
-
-
-.navbar li{
-    display: inline-block;
-    padding: 0 20px;
+.c-navbar .nav-link {
+    color: #fff;
 }

@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <!--start of styles section-->
-    <link rel="stylesheet" href="style/navbar.css">
-    <link rel="stylesheet" href="style/nav-footer-bar.css">
-    <link rel="stylesheet" href="style/button.css">
-    <link rel="stylesheet" href="style/content.css">
-    <!--end of styles section-->
-</head>
-<body>
-    <!--nav bar-->
-    <script id="replace_with_navbar" src="js/nav.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
 
-    <!--start of main content-->
-    <main>
-        <div><!--data analytics section-->
-            <!--start per each content-->
-            <div class="each-project-context">
-                <img src="" alt="">
-                <p>Walmart Sales Analysis</p>
+        <link rel="stylesheet" href="style/navbar.css"/>
+        <!--bootstrap css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!--end of styles section-->
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+
+        <!--navbar-->
+        <nav class="navbar navbar-expand-sm bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand text-uppercase" href="index.html">Meann</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--if you want the below part to be on the most right part, add ms-auto under ul-->
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutme.html">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">My Projects</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!--end per each content-->
-        </div>
-    </main>
-    <!--end of main content-->
+        </nav> 
+        <!--end of navbar-->
 
-    <!--footer-->
-    <script id="replace_with_footer" src="js/footer.js"></script>
-</body>
+        <!--start of main content-->
+        <main class="flex-grow-1">
+            <div class="container">
+                <h1 class="text-center mt-5">These are my projects:</h1>
+                <p class="text-center"></p>
+            </div>
+        </main>
+        <!--end of main content-->
+
+        <!--footer-->
+        <footer class="bg-dark py-5 mt-5">
+            <div class="container text-light text-center min-vh">
+                <p class="text-center mt-5">Copyright &copy; 2026 Meann. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--bootstrap js-->
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>

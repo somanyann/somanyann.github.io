@@ -7,3 +7,7 @@ fetch('html-content/footer.html')
     newelem.setAttribute("class","footerbar-div")
     oldelem.parentNode.replaceChild(newelem,oldelem);
 })
+
+let num = 5;
+num **= 2;
+console.log(num);
